@@ -11,12 +11,12 @@ function calculateRentalCost(days) {
     result = 40 * days;
   }
 
-  if (days >= 3 && days < 7) {
-    result = result - 20;
+  if (days >= 7) {
+    result -= 50;
   }
 
-  if (days >= 7) {
-    result = result - 50;
+  else if (days >= 3) {
+    result -= 20;
   }
 
   return result;
